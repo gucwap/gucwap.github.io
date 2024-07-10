@@ -53,12 +53,56 @@
     <p>Some day somebody should add reason why I writing this nonsense websitoblogish :)</p>
     <h1> Articles </h1>
 
+    <article>
+        <h2>10th July 2024. Project TTT - Day 13 - Summer Time </h2>
+        <section>
+            <p> I measure current 7 mA without power supply diode. I can use LM7805 or don't use it if use rechargeable
+                battery. Probably i put only 4x AA battery holder on the back of this game. If my box will arrive with
+                parts I solder it to perfboard and make Milestone D. Next project can be interesting because I have 2
+                old boards with me - 1st old sumo board I mentioned last time and 2nd unfinished component tester from
+                my father. Probably I want to finish the second one before we will see. 3rd topic is to fix my 14 years old usbasp programmer. I don't remember what is the reason that it don't work but it is more nostalgic and I try to check it the meantime :)</p>
+            <p>I am exited because I got my first JBC original soldering tip and I start using it. I hope my temporary
+                setup desk will be ok for the fist soldering action.</p>
+            <ul>
+                <li><b>DONE! </b>Milestone A finished! uC code is fully working. Probably some improvements will be
+                    implemented but in this stage all functionality is working. Start to prepare schematic, buy some
+                    elements and build first prototype. </li>
+                <li><b>DONE! </b>Milestone B is building working electronic prototype without special power delivery
+                    circuits.</li>
+                <li><b>DONE! </b>Milestone C is developing battery power system with supervising (and charging maybe) -
+                    circuit will be easy only 4xAA battery pack with extra regulator (if necessary :)
+                </li>
+                <li>Milestone D is fully working device</li>
+            </ul>
+
+        </section>
+    </article>
+
 
     <article>
         <h2>5th July 2024. Project TTT - Day 12 </h2>
         <section>
-            <p>Yesterday I try to put it together but some problem with programmer stopped me. Fortunately I have uno so I have spare programmer. That was some problem today with strange behavior or all setup and I don't know why. Miswiring is explanation :). I connected all buttons and make tweaks in code for led and start working properly without any problem. I started development of sounds for button clicking, error handling and after finishing the game. That is fun!</p>
-            <p>Extra I try to turn on old PCB made by me and my Father. I found articles from 2010 about building sumo robot with atmega16. Wow I was 13 and I don't have any knowledge about electronics at all. I knew english very little. I powered board and its working, LED is blinking like first article told. I remember that was painful experience, because many thing didnt work and I was mailing with author of the articles. Memories :'). I will try to put some other code to it and maybe finish this sumo project. But first TTT!</p>
+            <p>Yesterday I try to put it together but some problem with programmer stopped me. Fortunately I have uno so
+                I have spare programmer. That was some problem today with strange behavior or all setup and I don't know
+                why. Miswiring is explanation :). I connected all buttons and make tweaks in code for led and start
+                working properly without any problem. I started development of sounds for button clicking, error
+                handling and after finishing the game. That is fun!</p>
+            <p>Extra I try to turn on old PCB made by me and my Father. I found articles from 2010 about building sumo
+                robot with atmega16. Wow I was 13 and I don't have any knowledge about electronics at all. I knew
+                english very little. I powered board and its working, LED is blinking like first article told. I
+                remember that was painful experience, because many thing didnt work and I was mailing with author of the
+                articles. Memories :'). I will try to put some other code to it and maybe finish this sumo project. But
+                first TTT!</p>
+            <ul>
+                <li><b>DONE! </b>Milestone A finished! uC code is fully working. Probably some improvements will be
+                    implemented but in this stage all functionality is working. Start to prepare schematic, buy some
+                    elements and build first prototype. </li>
+                <li><b>DONE! </b>Milestone B is building working electronic prototype without special power delivery
+                    circuits.</li>
+                <li>Milestone C is developing battery power system with supervising (and charging maybe).</li>
+                <li>Milestone D is fully working device</li>
+            </ul>
+
         </section>
     </article>
 
@@ -66,8 +110,13 @@
     <article>
         <h2>3rd July 2024. Project TTT - Day 10 </h2>
         <section>
-            <p>I connected it to the uno, put fixes from day 9 and found some small bug fixed to. So I decided to take m168p from my box, usbasp and try to program it like it should be done ;). Blink works from the first try but I found some problems with programming, I don't know why I have so much problems with connections. </p>
-            <p>Simulation was grate, but I found one problem (i don't find any solution) warnings are ignored by simulation and didn;t show me so I didn't info that I something is not the best working in the background.</p>
+            <p>I connected it to the uno, put fixes from day 9 and found some small bug fixed to. So I decided to take
+                m168p from my box, usbasp and try to program it like it should be done ;). Blink works from the first
+                try but I found some problems with programming, I don't know why I have so much problems with
+                connections. </p>
+            <p>Simulation was grate, but I found one problem (i don't find any solution) warnings are ignored by
+                simulation and didn;t show me so I didn't info that I something is not the best working in the
+                background.</p>
         </section>
     </article>
 
@@ -75,32 +124,50 @@
     <article>
         <h2>1st July 2024. Project TTT - Day 9 </h2>
         <section>
-            <p>Breadbording. I want to start with led connection. I copied code from wokwi to the unor3 and lets go! There was a some sort of random coupling signal and turning random other leds. I rewired it one more time. Second thought was to change ports from PD0-PD5 to PD2-PD7 to avoid connection to the atmega16u2 used for UART. I started connecting it row by row. I helps a lot. But... If is only one row works like charm. When I connect second row current flow thru the pullup resistors. Probably resistance of 330R is to small and I need to increase it. Tomorrow I will try. Weekend was intense so I need to sleep earlier. <br><br> PS When I had problem with random blinking my wife went behind me and said "Oh I want to our Christmas tree light was blinking like that" Heh :) </p>
-            <p>UPDATE!!! IS WORKING. GOOD NIGHT! Only tweaks in code and woho! I mess and turing gpios as output and turining on it and if i change it to the input and HiZ is the best option :) I dont know why i want to use pullups :) </p>
+            <p>Breadbording. I want to start with led connection. I copied code from wokwi to the uno r3 and lets go!
+                There was a some sort of random coupling signal and turning random other leds. I rewired it one more
+                time. Second thought was to change ports from PD0-PD5 to PD2-PD7 to avoid connection to the atmega16u2
+                used for UART. I started connecting it row by row. I helps a lot. But... If is only one row works like
+                charm. When I connect second row current flow thru the pull up resistors. Probably resistance of 330R is
+                to small and I need to increase it. Tomorrow I will try. Weekend was intense so I need to sleep earlier.
+                <br><br> PS When I had problem with random blinking my wife went behind me and said "Oh I want to our
+                Christmas tree light was blinking like that" Heh :)
+            </p>
+            <p>UPDATE!!! IS WORKING. GOOD NIGHT! Only tweaks in code and woho! I mess and turing gpios as output and
+                turining on it and if i change it to the input and HiZ is the best option :) I don't know why i want to
+                use pullups :) </p>
         </section>
     </article>
 
     <article>
         <h2>29th June 2024. Project TTT - Day 8 - Milestone A</h2>
         <section>
-            <p>Maybe milestones should be created first, but I am designing process of designing, learning with it and pushing myself to learn new skills. Below list with milestones and </p>
+            <p>Maybe milestones should be created first, but I am designing process of designing, learning with it and
+                pushing myself to learn new skills. Below list with milestones and </p>
             <ul>
-                <li><b>DONE! </b>Milestone A finished! uC code is fully working. Probably some improvements will be implemented but in this stage all functionality is working. Start to prepare schematic, buy some elements and build first prototype. </li>
+                <li><b>DONE! </b>Milestone A finished! uC code is fully working. Probably some improvements will be
+                    implemented but in this stage all functionality is working. Start to prepare schematic, buy some
+                    elements and build first prototype. </li>
                 <li>Milestone B is building working electronic prototype without special power delivery circuits.</li>
                 <li>Milestone C is developing battery power system with supervising (and charging maybe).</li>
                 <li>Milestone D is fully working device</li>
             </ul>
-            <p>A and D probably will be the hardest milestones but first is past. Now is time to hardware, point I feel more confident, but it is my first device with embedded micro. Goal is more visible but still road should be the most important. Learning, developing skills and not leaving project in the begining.</p>
-            <p>I need to make plan, what should I learn when I will be waiting for components. In my head are some ideas:</p>
+            <p>A and D probably will be the hardest milestones but first is past. Now is time to hardware, point I feel
+                more confident, but it is my first device with embedded micro. Goal is more visible but still road
+                should be the most important. Learning, developing skills and not leaving project in the begining.</p>
+            <p>I need to make plan, what should I learn when I will be waiting for components. In my head are some
+                ideas:</p>
             <ol>
                 <li>uC - Timers and controlling PWM</li>
                 <li>Capacitive touch - testing old prototypes</li>
                 <li>IuC - 2C or SPI implementation</li>
 
             </ol>
-            <p>I am proud of myself. I am thinking about some review of my code. Probably it is the best option to gain experience from tutor.</p>
+            <p>I am proud of myself. I am thinking about some review of my code. Probably it is the best option to gain
+                experience from tutor.</p>
             <p>St. Peter and st. Paul day.</p>
-            <p>Maybe each project should have different page? There are only one proj, but if I start new there will be mix. That is wrong? I dont't know.</p>
+            <p>Maybe each project should have different page? There are only one proj, but if I start new there will be
+                mix. That is wrong? I dont't know.</p>
         </section>
     </article>
 
@@ -118,13 +185,20 @@
     <article>
         <h2>26th June 2024. Project TTT - Day 6</h2>
         <section>
-            <p>First try of using timers. BEEE. Don't work at all. I additionally add resistors to the wokwi simulation and draw schematic in the KiCAD. I want to have connection in the other place to eventually can share my problem in stackoverflow. <Br> <br> OMG I FOUND SOLUTION!!! <br> I should before change DDR register turn off PORT register to be shure that nothing happend. But that was some state before and it make some little glow of leds. Small but serious mistake. PS. timer0 working. :)</p>
+            <p>First try of using timers. BEEE. Don't work at all. I additionally add resistors to the wokwi simulation
+                and draw schematic in the KiCAD. I want to have connection in the other place to eventually can share my
+                problem in stackoverflow. <Br> <br> OMG I FOUND SOLUTION!!! <br> I should before change DDR register
+                turn off PORT register to be shure that nothing happened. But that was some state before and it make some
+                little glow of leds. Small but serious mistake. PS. timer0 working. :)</p>
             <ul>
                 <li>Add moving position depends of which player plays</li>
                 <li><s>TODO: Saving position of the dot to the array which diode should be turned on</s></li>
                 Progress: |#####################################################| 100%<br>
-                Progress: |...................................................................................................................................................| 0%
-                <br> (I thougth that progress bar can be cool so TESTs, I need to figure it out how to make it look good :))
+                Progress:
+                |...................................................................................................................................................|
+                0%
+                <br> (I thougth that progress bar can be cool so TESTs, I need to figure it out how to make it look good
+                :))
                 <li><s>TODO: Add reset functionality to start game again</s></li>
                 <li><s>TODO: Add another LEDs with different color to deference between players</s></li>
                 <li>TODO: Rewriting code for the two colors LED</li>
@@ -138,7 +212,9 @@
     <article>
         <h2>17th June 2024. Project TTT - Day 5</h2>
         <section>
-            <p>TODO update. So i create functions but it is not working properly. I need to deep dive into the timers probably. :) I cant use position with playerA and B scores and... Maybe I need to use next variable that is moving not is a decimal value?</p>
+            <p>TODO update. So i create functions but it is not working properly. I need to deep dive into the timers
+                probably. :) I cant use position with playerA and B scores and... Maybe I need to use next variable that
+                is moving not is a decimal value?</p>
             <ul>
                 <li><s>TODO: Saving position of the dot to the array which diode should be turned on</s></li>
                 <li><s>TODO: Add reset functionality to start game again</s></li>
@@ -154,18 +230,20 @@
     <article>
         <h2>15th June 2024. Project TTT - Day 4</h2>
         <section>
-            <p>After break back to the business :). I rewrite code which i wrote on the paper. Surprise! Dont work
-                correctly. My assumption about multiplexing and dont using HiZ state was wrong. First I thinking that I
+            <p>After break back to the business :). I rewrite code which i wrote on the paper. Surprise! Don't work
+                correctly. My assumption about multiplexing and don't using HiZ state was wrong. First I thinking that I
                 made miswiring, but I wrote another program that check connection. They was or
                 all right. Started bitbanging how it really works and surprise. HiZ is necessary. I have all states
-                which my code should have and tomorrow I will start with the function recreation to display state of game.  </p>
+                which my code should have and tomorrow I will start with the function recreation to display state of
+                game. </p>
         </section>
     </article>
 
     <article>
         <h2>13th June 2024. Project TTT - Day 3</h2>
         <section>
-            <p>Break from the screen. IOn the paper I made calculation how I can use my LED circuit and write long chain how it
+            <p>Break from the screen. IOn the paper I made calculation how I can use my LED circuit and write long chain
+                how it
                 should looks. </p>
         </section>
     </article>
